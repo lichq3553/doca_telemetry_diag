@@ -57,18 +57,18 @@ sample_srcs = [
 	# Main function for the sample's executable
 	SAMPLE_NAME + '_main.c',
 	# Common code for all DOCA samples
-	'../../common.c',
+	'/opt/mellanox/doca/samples/common.c',
 	# Common code for all DOCA applications
-	'../../../applications/common/utils.c',
+	'/opt/mellanox/doca/applications/common/utils.c',
 ]
 
 sample_inc_dirs  = []
 # Common DOCA logic (samples)
-sample_inc_dirs += include_directories('../..')
+sample_inc_dirs += include_directories('/opt/mellanox/doca/samples')
 # Common DOCA logic
-sample_inc_dirs += include_directories('../../..')
+sample_inc_dirs += include_directories('/opt/mellanox/doca')
 # Common DOCA logic (applications)
-sample_inc_dirs += include_directories('../../../applications/common/')
+sample_inc_dirs += include_directories('/opt/mellanox/doca/applications/common/')
 
 
 executable('doca_' + SAMPLE_NAME, sample_srcs,
