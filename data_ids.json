@@ -15,22 +15,6 @@
     {
       "name":"port_0_tx_packets",
       "data_id":"0x1140000300000000"
-    },
-    {
-      "name":"pcie_link_latency_total_read_ns",
-      "data_id":"0x1160000b00000000"
-    },
-    {
-      "name":"pcie_link_latency_total_read_packets",
-      "data_id":"0x1160000c00000000"
-    },
-    {
-      "name":"pcie_link_latency_max_read_ns",
-      "data_id":"0x1160000d00000000"
-    },
-    {
-      "name":"pcie_link_latency_min_read_ns",
-      "data_id":"0x1160000e00000000"
     }
   ]
 }
